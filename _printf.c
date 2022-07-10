@@ -30,3 +30,21 @@ int _printf(const char *format, ...)
 					x += _putchar(format[y + 1]);
 					y++;
 				}
+				else
+				{
+					f = get_func(&format[y + 1]);
+					x += f(args);
+					y++;
+				}
+			}
+		}
+		else
+		{
+			_putchar(format[y]);
+			x++;
+		}
+		y++;
+	}
+	va_end(args);
+	return (x);
+}
