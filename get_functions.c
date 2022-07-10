@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_func - check for valid specifier
+ * get_func - check for valid
  * @format: a character to check
  * Return: a pointer to the function
  */
