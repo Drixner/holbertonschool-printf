@@ -14,3 +14,13 @@ int (*get_func(const char *format))(va_list)
 		{"%", print_pct},
 		{NULL, NULL}
 	};
+
+	for (y = 0; p[y].t; y++)
+	{
+		if (*format == *(p[y].t))
+		{
+			return (p[y].f);
+		}
+	}
+	return (NULL);
+}
