@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 			if (format[y + 1])
 			{
 				if (format[y + 1] != 'c' && format[y + 1] != 's'
-				&& format[y + 1] != '%' && format[i + 1] != 'd'
+				&& format[y + 1] != '%' && format[y + 1] != 'd'
 				&& format[y + 1] != 'i')
 				{
 					x += _putchar(format[y]);
