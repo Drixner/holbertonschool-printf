@@ -7,6 +7,7 @@
  *Return: character
  */
 
+/*calling the function _putchar*/
 int print_char(va_list args)
 {
 
@@ -28,6 +29,7 @@ int print_str(va_list args)
 
 	if (str == NULL)
 		str = "(null)";
+	/*loop validating each character of the strig*/
 	for (x = 0; str[x]; x++)
 	{
 		_putchar(str[x]);
@@ -41,8 +43,9 @@ int print_str(va_list args)
  *
  *Return: character "%"
  */
+
 int print_pct(va_list args)
 {
-	(void)args;
+	(void)args;/*returns character percentage*/
 	return (write(1, "%", 1));
 }
