@@ -11,12 +11,15 @@
  * @t: pointer to the argument
  * @f: pointer-function associated with the argument
  */
+
+ /*defining structure*/
 typedef struct func_type
 {
 	char *t;
 	int (*f)(va_list);
 } func_t;
 
+/*prototypes*/
 int (*get_func(const char *format))(va_list);
 int _putchar(char c);
 int _printf(const char *format, ...);
