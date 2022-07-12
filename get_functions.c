@@ -8,6 +8,7 @@
 int (*get_func(const char *format))(va_list)
 {
 	int y;
+	/*function list containing specifiersi*/
 	func_t p[] = {
 		{"c", print_char},
 		{"s", print_str},
@@ -16,7 +17,8 @@ int (*get_func(const char *format))(va_list)
 		{"i", print_dec},
 		{NULL, NULL}
 	};
-
+	
+	/*Validate input*/
 	for (y = 0; p[y].t; y++)
 	{
 		if (*format == *(p[y].t))
